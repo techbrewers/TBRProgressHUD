@@ -21,6 +21,7 @@
 		4F58A55B19783D38003BB971 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F58A53D19783D37003BB971 /* UIKit.framework */; };
 		4F58A56319783D38003BB971 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F58A56119783D38003BB971 /* InfoPlist.strings */; };
 		4F58A56519783D38003BB971 /* TBRProgressHUDExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F58A56419783D38003BB971 /* TBRProgressHUDExampleTests.m */; };
+		BF5F23551979407A000A7CC8 /* TBRProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5F23541979407A000A7CC8 /* TBRProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		4F58A56019783D38003BB971 /* TBRProgressHUDExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TBRProgressHUDExampleTests-Info.plist"; sourceTree = "<group>"; };
 		4F58A56219783D38003BB971 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4F58A56419783D38003BB971 /* TBRProgressHUDExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBRProgressHUDExampleTests.m; sourceTree = "<group>"; };
+		BF5F23531979407A000A7CC8 /* TBRProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBRProgressHUD.h; path = ../../TBRProgressHUD/TBRProgressHUD.h; sourceTree = "<group>"; };
+		BF5F23541979407A000A7CC8 /* TBRProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBRProgressHUD.m; path = ../../TBRProgressHUD/TBRProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,7 @@
 				4F58A54B19783D37003BB971 /* Main.storyboard */,
 				4F58A54E19783D37003BB971 /* ViewController.h */,
 				4F58A54F19783D37003BB971 /* ViewController.m */,
+				BF5F23561979407E000A7CC8 /* TBRProgressHUD */,
 				4F58A55119783D37003BB971 /* Images.xcassets */,
 				4F58A54019783D37003BB971 /* Supporting Files */,
 			);
@@ -150,6 +154,15 @@
 				4F58A56119783D38003BB971 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF5F23561979407E000A7CC8 /* TBRProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				BF5F23531979407A000A7CC8 /* TBRProgressHUD.h */,
+				BF5F23541979407A000A7CC8 /* TBRProgressHUD.m */,
+			);
+			name = TBRProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F58A55019783D37003BB971 /* ViewController.m in Sources */,
+				BF5F23551979407A000A7CC8 /* TBRProgressHUD.m in Sources */,
 				4F58A54A19783D37003BB971 /* AppDelegate.m in Sources */,
 				4F58A54619783D37003BB971 /* main.m in Sources */,
 			);
@@ -456,6 +470,7 @@
 				4F58A56A19783D38003BB971 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4F58A56B19783D38003BB971 /* Build configuration list for PBXNativeTarget "TBRProgressHUDExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +479,7 @@
 				4F58A56D19783D38003BB971 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

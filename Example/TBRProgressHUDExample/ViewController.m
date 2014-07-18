@@ -7,23 +7,17 @@
 //
 
 #import "ViewController.h"
-
-@interface ViewController ()
-
-@end
+#import "TBRProgressHUD.h"
 
 @implementation ViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    TBRProgressHUD *progressHUD = [[TBRProgressHUD alloc] initWithView:self.view];
+    progressHUD.text = @"Loading...";
+    [self.view addSubview:progressHUD];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end
